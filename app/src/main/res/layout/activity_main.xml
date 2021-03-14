@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity"
+    android:background="@drawable/gradient_background">
+
+    <EditText
+        android:id="@+id/edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:inputType="number"
+        android:layout_alignParentLeft="true" />
+    <TextView
+        android:id="@+id/textview_starting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edittext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Starting fuel: "
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/textview_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview_starting"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="End fuel check fuel: "
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/textview_burned"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview_end"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Burned: "
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/textview_burnrate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview_burned"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Burnrate: "
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/textview_burnouttime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview_burnrate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Burnout time: "
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/textview_reservetimes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview_burnouttime"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Reserve (VFR,IFR): "
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/button_start"
+        android:layout_width="147dp"
+        android:layout_height="92dp"
+        android:layout_below="@+id/textview_reservetimes"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/helicopter"
+        android:text="" />
+
+    <Chronometer
+        android:id="@+id/clock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_start"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="30sp" />
+    <TextView
+        android:id="@+id/Instructions2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/clock"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="INSTRUCTIONS:"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/Instructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Instructions2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Enter starting fuel in top line and press button"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+    <TextView
+    android:id="@+id/Instructions3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/Instructions"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="10dp"
+    android:text="Clock starts when you hit button"
+    android:textColor="@android:color/black"
+    android:textSize="20sp" />
+    <TextView
+        android:id="@+id/lastcheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Instructions3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Last fuel check: "
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+</RelativeLayout>
